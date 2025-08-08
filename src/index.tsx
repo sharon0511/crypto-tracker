@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(rootElement);
 
 root.render(
   <div>
-    <BrowserRouter>
+    <BrowserRouter basename="/crypto-tracker">
       <QueryClientProvider client={queryClient}>
         <App />
       </QueryClientProvider>
