@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/crypto-tracker/static/css/main.e6265a0d.css",
+    "main.js": "/crypto-tracker/static/js/main.7d3a7c83.js",
+    "static/media/borel-latin-400-normal.woff2": "/crypto-tracker/static/media/borel-latin-400-normal.dcb67f399fc73bb45c3e.woff2",
+    "static/media/borel-latin-400-normal.woff": "/crypto-tracker/static/media/borel-latin-400-normal.7d4fecd40d09b27b0333.woff",
+    "static/media/borel-math-400-normal.woff2": "/crypto-tracker/static/media/borel-math-400-normal.bddee517b3cb5a0cfac1.woff2",
+    "static/media/borel-symbols-400-normal.woff2": "/crypto-tracker/static/media/borel-symbols-400-normal.8cf12ab07162280d6e81.woff2",
+    "static/media/borel-math-400-normal.woff": "/crypto-tracker/static/media/borel-math-400-normal.8fda63915f7ceef7248c.woff",
+    "static/media/borel-symbols-400-normal.woff": "/crypto-tracker/static/media/borel-symbols-400-normal.f04fdb0bbe33a4589bde.woff",
+    "static/media/borel-vietnamese-400-normal.woff": "/crypto-tracker/static/media/borel-vietnamese-400-normal.ff167e89868d244bc0d4.woff",
+    "static/media/borel-vietnamese-400-normal.woff2": "/crypto-tracker/static/media/borel-vietnamese-400-normal.e8dd5a810e6944ccf1a9.woff2",
+    "static/media/borel-latin-ext-400-normal.woff2": "/crypto-tracker/static/media/borel-latin-ext-400-normal.abb4026ce48875f05b50.woff2",
+    "static/media/borel-latin-ext-400-normal.woff": "/crypto-tracker/static/media/borel-latin-ext-400-normal.e182aeeb2657197a83b5.woff",
+    "index.html": "/crypto-tracker/index.html",
+    "main.e6265a0d.css.map": "/crypto-tracker/static/css/main.e6265a0d.css.map",
+    "main.7d3a7c83.js.map": "/crypto-tracker/static/js/main.7d3a7c83.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6265a0d.css",
+    "static/js/main.7d3a7c83.js"
+  ]
+}
