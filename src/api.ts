@@ -2,25 +2,25 @@ const BASE_URL = `https://api.coinpaprika.com/v1`
 
 
 export async function fetchCoins() {
-  // return fetch(`${BASE_URL}/coins`).then((response) =>
-  return fetch("/coinsData.json").then((response) =>
+  return fetch(`${BASE_URL}/coins`).then((response) =>
+  // return fetch("/coinsData.json").then((response) =>
     response.json());
 }
 
 export function fetchCoinInfo(coinId: string) {
-  // return fetch(`${BASE_URL}/coins/${coinId}`).then((response) =>
-  //   response.json());
-  return fetch("/infoData.json")
-  .then((response) => response.json())
-  .then((coins) => coins.find((coin: any) => coin.id === coinId));
+  return fetch(`${BASE_URL}/coins/${coinId}`).then((response) =>
+    response.json());
+  // return fetch("/infoData.json")
+  // .then((response) => response.json())
+  // .then((coins) => coins.find((coin: any) => coin.id === coinId));
 }
 
 export function fetchCoinTickers(coinId: string) {
-  // return fetch(`${BASE_URL}/tickers/${coinId}`).then((response) =>
-  //   response.json());
-  return fetch("/tickersData.json")
-  .then((response) => response.json())
-  .then((coins) => coins.find((coin: any) => coin.id === coinId));
+  return fetch(`${BASE_URL}/tickers/${coinId}`).then((response) =>
+    response.json());
+  // return fetch("/tickersData.json")
+  // .then((response) => response.json())
+  // .then((coins) => coins.find((coin: any) => coin.id === coinId));
 }
 
 export function fetchCoinHistory(coinId: string) {
