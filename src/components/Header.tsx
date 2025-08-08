@@ -45,7 +45,7 @@ const Icon = styled.div<{ isDark: boolean }>`
 
 const HomeLink = styled(Link)`
   text-decoration: none;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: bold;
   color: ${(props) => props.theme.textColor};
   transition: opacity 0.2s ease;
@@ -58,7 +58,7 @@ const HomeLink = styled(Link)`
 function Header({ isDark, toggleTheme }: Props) {
   return (
     <Container>
-      <HomeLink to="/">Home</HomeLink>
+      <HomeLink to="/"><AiFillHome /></HomeLink>
       <ToggleWrapper onClick={toggleTheme} aria-label="Toggle Dark Mode">
         <Icon isDark={isDark}>{isDark ? "🌙" : "☀️"}</Icon>
       </ToggleWrapper>
