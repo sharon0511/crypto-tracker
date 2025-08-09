@@ -4,6 +4,8 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import Header from "./components/Header";
 import { darkTheme, lightTheme } from "./theme";
 import { useEffect, useState } from "react";
+import { atom, useAtom, useAtomValue, useSetAtom } from 'jotai';
+import { isDarkAtom, toggleThemeAtom } from "./atoms";
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
@@ -70,33 +72,14 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.apexcharts-tooltip { 
-    background: #f3f3f3;
-    color: black;
-}
 `
 const PageContainer = styled.div`
   padding-top: 70px;
 `;
 
 function App() {
-  const currentTheme = window.localStorage.getItem("darkTheme") === "true";
-  const [isDark, setIsDark] = useState(currentTheme);
-  
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("darkTheme");
-    if (savedTheme !== null) {
-      setIsDark(savedTheme === "true");
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    setIsDark((prev) => {
-      const next = !prev;
-      window.localStorage.setItem("darkTheme", next + "");
-      return next;
-    });
-  };
+  const isDark = useAtomValue(isDarkAtom);
+  const toggleTheme = useSetAtom(toggleThemeAtom);
 
   return (
     <>

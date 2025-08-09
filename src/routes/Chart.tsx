@@ -1,6 +1,8 @@
 import { useQuery } from "react-query";
 import { fetchCoinHistory } from "../api";
 import ApexCharts from "react-apexcharts";
+import { useAtomValue } from "jotai";
+import { isDarkAtom } from "../atoms";
 
 interface IHistorical {
   time_open: number;
@@ -18,6 +20,8 @@ interface ChartProps {
 }
 
 function Chart({ coinId }: ChartProps) {
+  const isDark = useAtomValue(isDarkAtom);
+
   const {isLoading, data} = useQuery<IHistorical[]>(["ohlcv", coinId], () => fetchCoinHistory(coinId),
     {
       refetchInterval: 10000,
@@ -43,6 +47,9 @@ function Chart({ coinId }: ChartProps) {
         },
       ]}
       options={{
+        theme: {
+          mode: isDark ? "dark" : "light"
+        },
         plotOptions: {
           candlestick: {
             colors: {
