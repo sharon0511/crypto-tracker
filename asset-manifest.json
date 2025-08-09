@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/crypto-tracker/static/css/main.e6265a0d.css",
-    "main.js": "/crypto-tracker/static/js/main.9bcb89e9.js",
+    "main.js": "/crypto-tracker/static/js/main.6b8cbd23.js",
     "static/media/borel-latin-400-normal.woff2": "/crypto-tracker/static/media/borel-latin-400-normal.dcb67f399fc73bb45c3e.woff2",
     "static/media/borel-latin-400-normal.woff": "/crypto-tracker/static/media/borel-latin-400-normal.7d4fecd40d09b27b0333.woff",
     "static/media/borel-math-400-normal.woff2": "/crypto-tracker/static/media/borel-math-400-normal.bddee517b3cb5a0cfac1.woff2",
@@ -14,10 +14,10 @@
     "static/media/borel-latin-ext-400-normal.woff": "/crypto-tracker/static/media/borel-latin-ext-400-normal.e182aeeb2657197a83b5.woff",
     "index.html": "/crypto-tracker/index.html",
     "main.e6265a0d.css.map": "/crypto-tracker/static/css/main.e6265a0d.css.map",
-    "main.9bcb89e9.js.map": "/crypto-tracker/static/js/main.9bcb89e9.js.map"
+    "main.6b8cbd23.js.map": "/crypto-tracker/static/js/main.6b8cbd23.js.map"
   },
   "entrypoints": [
     "static/css/main.e6265a0d.css",
-    "static/js/main.9bcb89e9.js"
+    "static/js/main.6b8cbd23.js"
   ]
 }
